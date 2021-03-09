@@ -21,34 +21,7 @@ namespace PTPMQL.Models
                 .IsUnicode(false);
             {
             }
-            
-             public virtual DbSet<NhanVien> NhanViens { get; set; }
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-
-
-        {
-            modelBuilder.Entity<NhanVien>()
-                .Property(e => e.SoDienThoai)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<NhanVien>()
-                .Property(e => e.MaNhanVien)
-                .IsUnicode(false);
-            {
-            }
-            public virtual DbSet<NhanVien> DanhMucs { get; set; }
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            {
-                modelBuilder.Entity<DanhMuc>()
-                    .Property(e => e.PhanLoaiDanhMuc )
-                    .IsUnicode(false);
-
-                modelBuilder.Entity<DanhMuc >()
-                    .Property(e => e.MaDanhMuc )
-                    .IsUnicode(false);
-            }
-            
+           
 
         }
             
